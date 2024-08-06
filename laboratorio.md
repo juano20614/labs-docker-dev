@@ -27,4 +27,11 @@ Status: Downloaded newer image for python:3.9
 docker.io/library/python:3.9
 
 
+## Ejecutar contenedor
+@juano20614 ➜ /workspaces/labs-docker-dev (main) $ docker run -it ubuntu bash
+root@af939145eeaa:/# 
+root@af939145eeaa:/# ls -a
+.  ..  .dockerenv  bin  boot  dev  etc  home  lib  lib64  media  mnt  opt  proc  root  run  sbin  srv  sys  tmp  usr  var
+
+
 
