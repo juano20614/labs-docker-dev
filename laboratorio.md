@@ -34,4 +34,17 @@ root@af939145eeaa:/# ls -a
 .  ..  .dockerenv  bin  boot  dev  etc  home  lib  lib64  media  mnt  opt  proc  root  run  sbin  srv  sys  tmp  usr  var
 
 
+## Eliminar contenedor
+$ docker ps -a
+CONTAINER ID   IMAGE     COMMAND                  CREATED          STATUS                        PORTS                                   NAMES
+af939145eeaa   ubuntu    "bash"                   14 minutes ago   Exited (129) 8 seconds ago                                            compassionate_lewin
+d10172e5b077   nginx     "/docker-entrypoint.…"   4 days ago       Exited (255) 21 minutes ago   0.0.0.0:8080->80/tcp, :::8080->80/tcp   hardcore_euler
 
+@juano20614 ➜ /workspaces/labs-docker-dev (main) $ docker container prune
+WARNING! This will remove all stopped containers.
+Are you sure you want to continue? [y/N] y
+Deleted Containers:
+af939145eeaa946dbf222922c37ce14fdd4a37c8e47acb7d7b0a627078e4e06c
+d10172e5b077f693b5b92bbbc1ad0b47884d11f124ca3888151893fa28b5e05d
+
+Total reclaimed space: 1.101kB
